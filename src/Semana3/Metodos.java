@@ -10,6 +10,7 @@ package Semana3;
  * @author maubo
  */
 public class Metodos {
+    static int peso = 100;
     public static void main (String[] args) {
         
         int resultadoParaProfe;
@@ -54,7 +55,7 @@ public class Metodos {
      */
     public static int maria(int numero1, int numero2, int numero3){
         int resultado;
-        resultado = numero1 + numero2;
+        resultado = numero1 * numero2;
         return resultado;        
     }
     
