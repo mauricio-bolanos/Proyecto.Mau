@@ -27,6 +27,7 @@ public class examen {
         int guanacaste = 326953;
         int puntarenas = 410929;
         int limon = 386862;
+        int monto = 0;
 
         Scanner escaner = new Scanner(System.in);
 
@@ -56,10 +57,24 @@ public class examen {
                     if (cantTrabaCVD > 20) {
                         System.out.println("Alerta!!!");
                     }
-                }
-                case 3: {
                     
                 }
+                break;
+                case 3: {
+                    System.out.println("El monto que se puede prestar es: " + monto);
+                    monto = monto + cantTrabaCVD / cantTrabajadores * sanjose;
+                    System.out.println("La tasa de interes es : ");
+                    if(cantTrabajadores == 10){
+                        System.out.println("0.5");
+                    }
+                    if(cantTrabajadores == 30){
+                        System.out.println("0.4");
+                    }
+                    if(cantTrabajadores == 31){
+                        System.out.println("0.3");
+                    }
+                }
+                break;
             }
 
         }
