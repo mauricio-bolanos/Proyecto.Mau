@@ -41,8 +41,24 @@ public class examen {
                     nomEmp = escaner.next();
                     System.out.println("Digite la provincia donde se ubica la empresa");
                     provincia = escaner.next();
-                    
+                    System.out.println("Digite la cantidad de trabajadores de la empresa");
+                    cantTrabajadores = escaner.nextInt();
+                    System.out.println("Digite la cantidad de trabajadores con COVID-19 en la empresa");
+                    cantTrabaCVD = escaner.nextInt();
+                    System.out.println("Digite la cantidad promedio de ingreso de la empresa");
+                    promIngreso = escaner.nextInt();
+                    System.out.println("Digite la cantidad de creditos de la empresa");
+                    creditos = escaner.nextInt();
                     break;
+                }
+                case 2: {
+                    System.out.println("Datos de la empresa: \n" + nomEmp + provincia + cantTrabajadores + cantTrabaCVD + promIngreso + creditos);
+                    if (cantTrabaCVD > 20) {
+                        System.out.println("Alerta!!!");
+                    }
+                }
+                case 3: {
+
                 }
             }
 
