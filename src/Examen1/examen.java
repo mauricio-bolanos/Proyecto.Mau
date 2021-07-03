@@ -13,6 +13,22 @@ import java.util.Scanner;
  */
 public class examen {
 
+    String nomEmp = "";
+    String provincia = "";
+    int cantTrabajadores = 0;
+    int cantTrabaCVD = 0;
+    int promIngreso = 0;
+    int creditos = 0;
+    int sanjose = 1404242;
+    int alajuela = 848146;
+    int cartago = 490903;
+    int heredia = 433677;
+    int guanacaste = 326953;
+    int puntarenas = 410929;
+    int limon = 386862;
+    int monto = 0;
+    double tasaInt = 0.0;
+
     public static void main(String[] args) {
         String nomEmp = "";
         String provincia = "";
@@ -28,6 +44,7 @@ public class examen {
         int puntarenas = 410929;
         int limon = 386862;
         int monto = 0;
+        double tasaInt = 0.0;
 
         Scanner escaner = new Scanner(System.in);
 
@@ -57,21 +74,23 @@ public class examen {
                     if (cantTrabaCVD > 20) {
                         System.out.println("Alerta!!!");
                     }
-                    
+
                 }
                 break;
                 case 3: {
                     System.out.println("El monto que se puede prestar es: " + monto);
                     monto = monto + cantTrabaCVD / cantTrabajadores * sanjose;
                     System.out.println("La tasa de interes es : ");
-                    if(cantTrabajadores == 10){
-                        System.out.println("0.5");
+                    if (cantTrabajadores == 10) {
+                        tasaInt = 0.5;
                     }
-                    if(cantTrabajadores == 30){
-                        System.out.println("0.4");
+                    if (cantTrabajadores == 30) {
+                        tasaInt = 0.4;
                     }
-                    if(cantTrabajadores == 31){
-                        System.out.println("0.3");
+                    if (cantTrabajadores == 31) {
+                        tasaInt = 0.3;
+                    } else {
+
                     }
                 }
                 break;
@@ -80,4 +99,18 @@ public class examen {
         }
     }
 
+    public static void creditosmas(int creditos, int promIngreso, double tasaInt) {
+        if (creditos == 5) {
+            int ajuste = promIngreso / 10000;
+            System.out.println("el monto entonces es:"tasaInt + ajuste
+        
+    
+
+);
+        
+    
+
+
+        }
+    }
 }
