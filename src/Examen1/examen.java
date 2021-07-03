@@ -20,7 +20,7 @@ public class examen {
         int cantTrabaCVD = 0;
         int promIngreso = 0;
         int creditos = 0;
-        int sanJose = 1404242;
+        int sanjose = 1404242;
         int alajuela = 848146;
         int cartago = 490903;
         int heredia = 433677;
@@ -58,7 +58,7 @@ public class examen {
                     }
                 }
                 case 3: {
-
+                    
                 }
             }
 
