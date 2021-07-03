@@ -102,11 +102,7 @@ public class examen {
     public static void creditosmas(int creditos, int promIngreso, double tasaInt) {
         if (creditos == 5) {
             int ajuste = promIngreso / 10000;
-            System.out.println("el monto entonces es:"tasaInt + ajuste
-        
-    
-
-);
+            System.out.println("el monto entonces es:"tasaInt + ajuste);
         
     
 
