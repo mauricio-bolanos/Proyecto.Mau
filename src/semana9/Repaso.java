@@ -13,11 +13,11 @@ public class Repaso {
 
     double salario = 10d;
 
-    public void calcularImpuesto(int numDependientes, double salario) {
+    public double calcularImpuesto(int numDependientes, double salario) {
 
         System.out.println(salario);
         System.out.println(this.salario);
-
+        return 0;
         
     }
 

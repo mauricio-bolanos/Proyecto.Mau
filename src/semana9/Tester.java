@@ -5,6 +5,8 @@
  */
 package semana9;
 
+import java.util.Scanner;
+
 /**
  *
  * @author maubo
@@ -17,6 +19,7 @@ public class Tester {
         
         Scanner escaner = new Scanner(System.in);
         int ssss = escaner.nextInt();
+        
         
         repaso3.calcularImpuesto(2, 30000);
     }
