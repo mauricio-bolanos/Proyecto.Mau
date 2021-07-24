@@ -28,7 +28,7 @@ public class ExamenP {
     int monto = 0;
     double tasaInt = 0.0;
 
-    public void iniciar() {
+    public void iniciar(){
         
         Scanner escaner = new Scanner(System.in);
 
@@ -71,10 +71,10 @@ public class ExamenP {
                     if (10>cantTrabajadores && cantTrabajadores>0 ) {
                         tasaInt = 0.5;
                     }
-                    if (cantTrabajadores == 30) {
+                    if (30>cantTrabajadores && cantTrabajadores>0) {
                         tasaInt = 0.4;
                     }
-                    if (cantTrabajadores == 31) {
+                    if (31>cantTrabajadores && cantTrabajadores>0) {
                         tasaInt = 0.3;
                     } else {
 
@@ -89,7 +89,7 @@ public class ExamenP {
 
     public static void creditosmas(int creditos, int cantIngreso, double tasaInt) {
         if (creditos > 0) {
-            int ajuste = cantIngreso / 10000;
+            int ajuste = cantIngreso / 100000;
             System.out.println("el monto entonces es:");
         
     
@@ -97,6 +97,4 @@ public class ExamenP {
 
         }
     }
-}
-    
 }
