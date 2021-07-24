@@ -5,33 +5,36 @@
  */
 package Semana3;
 
+import java.util.Scanner;
+
 /**
  *
  * @author maubo
  */
 public class Calculadora {
-    public static void main (String[] args){
-        Scanner Calculadora = new Scanner(System.in);
+    
+    public float promedio(int a, int b){
+        float resultado;
         
-        System.out.println("Digite el primer numero");
-        System.out.println();
-        int numero1 = Calculadora.nextInt();
-        System.out.println("Digite otro numero");
-        int numero2 = Calculadora.nextInt();
-        System.out.println("digite un numero más");
-        int numero3 = Calculadora.next.Int();
-
-    /**
-     *
-     * @param numero1
-     * @param numero2
-     * @param numero3
-     * @return
-     */
-    public static int suma(int numero1, int numero2, int numero3){
-        int resultado;
-        resultado = numero1 + numero2 + numero3;
-        return resultado;        
-        }
+        resultado = a + b;
+        resultado = resultado / 2;
+        
+        return resultado;
+    }
+    
+    public static void main(String[] args) {
+        int num1;
+        int num2;
+        float resultado;
+        
+        Scanner f23frr = new Scanner(System.in);
+        System.out.println("Favor digite un número: ");
+        num1 = f23frr.nextInt();
+        System.out.println("Favor digite otro número: ");
+        num2 = f23frr.nextInt();
+        
+        Calculadora calc = new Calculadora();
+        resultado = calc.promedio(num1, num2);
+        System.out.println("Resultado es: "+resultado); 
     }
 }
