@@ -20,7 +20,7 @@ public class Ciclos {
             
             hh = hh + 1;
         }
-        for(int j=0; j < n; j++){
+        for(int j=0; j < n; j--){
             if (hh == 0 || hh==(n-1) ){
                 System.out.print("*");
             }
