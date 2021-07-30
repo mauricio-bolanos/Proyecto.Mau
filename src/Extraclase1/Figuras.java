@@ -11,20 +11,22 @@ package Extraclase1;
  */
 public class Figuras {
     
+    public static void main(String[] args) {
+        
 
-    for (int i = 0; i < 15; i++) {
+    for(int i = 0; i < 15; i++) {
         System.out.print("A");
         System.out.print("B");
     }
     
-    
-    while (i < 15 ) {
+    int e=0;
+    while(e < 15 ) {
         System.out.print("A");
         System.out.print("B");
-        i++;
+        e++;
 
 
     }
-    
+    }   
     
 }
