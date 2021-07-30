@@ -10,21 +10,22 @@ package semana4;
  * @author maubo
  */
 public class factoresRiesgo {
-    public static void main(String[] args){
-        public String cita (int factoresRiesgo){
-        
-       System.out.println("Digite la cantidad de factores de riesgo");
-        if (factoresRiesgo == 1 ){
-            
-        System.out.println("Tendra cita dentro de 1 semana");
+    public static void main(String[] args) {
+        int factoresRiesgoss;
+ 
+        int factoresRiesgos = 0;
+        System.out.println("Digite la cantidad de factores de riesgo");
+        if (factoresRiesgos == 1) {
+
+            System.out.println("Tendra cita dentro de 1 semana");
         }
-        if (factoresRiesgo == 2){
-        System.out.println("Tendra cita en 3 días");
+        if (factoresRiesgos == 2) {
+            System.out.println("Tendra cita en 3 días");
         }
-        if (factoresRiesgo == 3){
-        System.out.println("Tendra cita mañana");
+        if (factoresRiesgos == 3) {
+            System.out.println("Tendra cita mañana");
         }
-        return cita;
-        }
-    }
+
+    
+}
 }
