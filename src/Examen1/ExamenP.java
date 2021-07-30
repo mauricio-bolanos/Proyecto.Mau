@@ -127,7 +127,7 @@ public class ExamenP {
     int guanacaste = 326953;
     int puntarenas = 410929;
     int limon = 386862;
-    double monto = 0.0;
+    double monto = 0.0d;
     double tasaInt = 0.0;
     int poblacion = 0;
     Scanner escaner = new Scanner(System.in);     
