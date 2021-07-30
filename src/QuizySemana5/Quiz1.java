@@ -17,9 +17,8 @@ public class Quiz1 {
         int ingrediente3 = 40;
         int grande = 40;
         int peque = 10; 
-        int pog;
-        int ingredientes;
-        public String pizza (int ingredientes, int pog);
+        int pog = 0;
+        int ingredientes = 0;
         
         
         System.out.println ("Digite 1 si desea el primer ingrediente o un 0 en caso de que no lo desee");
@@ -29,11 +28,11 @@ public class Quiz1 {
         
         System.out.println ("Digite 2 si desea el segundo ingrediente o un 0 en caso de que no lo desee");
         if (ingredientes == 2){
-        pizza=30
+        pizza=30;
         }
         System.out.println ("Digite 3 si desea el tercer ingrediente o un 0 en caso de que no lo desee");
         if (ingredientes == 3){
-        pizza = 40
+        pizza = 40;
         }
         System.out.println ("Digite 1 si desea la pizza grande o un 0 si la desea pequeña");
         if (pog == 1){
@@ -41,16 +40,7 @@ public class Quiz1 {
         }
         else if (pog == 0){
         pizza= ingredientes + peque;
-        }
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        }    
     }
     
 }

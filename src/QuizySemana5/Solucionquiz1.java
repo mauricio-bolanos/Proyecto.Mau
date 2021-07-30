@@ -5,6 +5,8 @@
  */
 package QuizySemana5;
 
+import java.util.Scanner;
+
 /**
  *
  * @author maubo
