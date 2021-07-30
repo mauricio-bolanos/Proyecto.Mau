@@ -11,12 +11,16 @@ package Semana10;
  */
 public class TesterMaqConvertidora {
     public static void main(String[] args) {
-        Moneda modenaEuro = new Moneda ("Euro", 0.8f)
-        Moneda modenaOrigin = new Moneda("Colon", 620);
-        Moneda modenaSalida = new Moneda("Dolar", 1);
+        Moneda modenaEuro = new Moneda("Euro", 0.8f);
+        Moneda modenaColon = new Moneda("Colon", 620);
+        Moneda modenaDolar = new Moneda("Dolar", 1);
+        
         
         MaqConvertidora m = new MaqConvertidora();
         double montoDolares = m.convertir(modenaColon, modenaDolar, 1000);
-        System.out.println("Monto en Dolares :"+ montoDolares);
+        System.out.println("Monto en Dólares: "+montoDolares);
+        
+        double montoColones = m.convertir(modenaDolar, modenaColon, 2);
+        System.out.println("Monto en Colones: "+montoColones);
     }
 }

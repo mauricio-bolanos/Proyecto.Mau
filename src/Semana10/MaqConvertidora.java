@@ -14,6 +14,7 @@ public class MaqConvertidora {
     
     public double convertir(Moneda origen, Moneda salida, double montoOrigin){
         double resultado = 0.0d;
+        resultado = montoOrigin/origen.getValor();
     
         return resultado;
     }

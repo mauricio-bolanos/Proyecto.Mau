@@ -11,12 +11,22 @@ package Semana10;
  */
 public class Moneda {
     String nombre;
-    int valor;
+    float valor;
 
-    public Moneda(String nombre, int valor) {
+    public Moneda(String nombre, float valor) {
         this.nombre = nombre;
         this.valor = valor;
     }
-    
-    
+    public String getNombre(){
+        return nombre;
+    }
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
+    public float getValor(){
+        return valor;
+    }
+    public void setValor(float valor){
+        this.valor = valor;
+    }
 }
