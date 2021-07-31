@@ -5,10 +5,7 @@
  */
 package Examen1;
 
-import static Semana10.Calculadora.conGUI;
-import static Semana10.Calculadora.porTerminal;
-import Semana10.Estudiante;
-import static java.lang.System.exit;
+
 import java.util.Scanner;
 
 /**
@@ -16,102 +13,6 @@ import java.util.Scanner;
  * @author maubo
  */
 public class ExamenP {
-
-
-    private static void exit(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-   
-    /*
-    public String nomEmp = "";
-    public String provincia = "";
-    public int cantTrabajadores = 0;
-    public int cantTrabaCVD = 0;
-    public int cantIngreso = 0;
-    public int creditos = 0;
-    public int sanjose = 1404242;
-    public int alajuela = 848146;
-    public int cartago = 490903;
-    public int heredia = 433677;
-    public int guanacaste = 326953;
-    public int puntarenas = 410929;
-    public int limon = 386862;
-    public int monto = 0;
-    public double tasaInt = 0.0;
-    public int poblacion = 0;
-  */
-
-    
-   /* public void Iniciar(){
-        
-        Scanner escaner = new Scanner(System.in);
-
-        while (true) {
-            System.out.println("""
-                               Menu 
-                               1) Digite datos de la empresa 
-                               2)Imprimir informacion completa de la empresa 
-                               3cuanto monto se le puede prestar a la empresa """);
-            int option = escaner.nextInt();
-            switch (option) {
-
-                case 1: {
-                    System.out.println("Digite el nombre de la empresa");
-                    nomEmp = escaner.next();
-                    System.out.println("Digite la provincia donde se ubica la empresa");
-                    provincia = escaner.next();
-                    System.out.println("Digite la cantidad de trabajadores de la empresa");
-                    cantTrabajadores = escaner.nextInt();
-                    System.out.println("Digite la cantidad de trabajadores con COVID-19 en la empresa");
-                    cantTrabaCVD = escaner.nextInt();
-                    System.out.println("Digite la cantidad de ingreso de la empresa");
-                    cantIngreso = escaner.nextInt();
-                    System.out.println("Digite la cantidad de creditos de la empresa");
-                    creditos = escaner.nextInt();
-                    break;
-                }
-                case 2: {
-                    System.out.println("Datos de la empresa: \n" + nomEmp + provincia + cantTrabajadores + cantTrabaCVD + cantIngreso + creditos);
-                    if (cantTrabaCVD > 20) {
-                        System.out.println("Alerta!!!");
-                    }
-
-                }
-                break;
-                case 3: {
-                    
-                    monto = monto + cantTrabaCVD / cantTrabajadores * sanjose;
-                    System.out.println("La tasa de interes es : ");
-                    if (10>cantTrabajadores && cantTrabajadores>0 ) {
-                        tasaInt = 0.5;
-                    }
-                    if (30>cantTrabajadores && cantTrabajadores>0) {
-                        tasaInt = 0.4;
-                    }
-                    if (31>cantTrabajadores && cantTrabajadores>0) {
-                        tasaInt = 0.3;
-                    } else {
-
-                    }
-                    System.out.println("El monto que se puede prestar es: " + monto);
-                }
-                break;
-            }
-
-        }
-    }
-
-    public static void creditosmas(int creditos, int cantIngreso, double tasaInt) {
-        if (creditos > 0) {
-            int ajuste = cantIngreso / 100000;
-            System.out.println("el monto entonces es:");
-        
-  
-        }
-    }
-   
-    */
-  
      public static void main(String[] args) {
         
     String nomEmp = "";

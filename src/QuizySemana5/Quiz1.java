@@ -5,6 +5,8 @@
  */
 package QuizySemana5;
 
+import java.util.Scanner;
+
 /**
  *
  * @author maubo
@@ -20,7 +22,7 @@ public class Quiz1 {
         int pog = 0;
         int ingredientes = 0;
         
-        
+        Scanner escaner = new Scanner(System.in);
         System.out.println ("Digite 1 si desea el primer ingrediente o un 0 en caso de que no lo desee");
         if (ingredientes == 1){
         pizza = 20;
