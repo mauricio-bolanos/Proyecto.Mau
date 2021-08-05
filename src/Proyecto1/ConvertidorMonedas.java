@@ -23,10 +23,10 @@ public class ConvertidorMonedas {
 
         while (true) {
             System.out.println("""
-                               Menu 
-                               1) Tipo de moneda origen(Dolar,Euro,Colon) cantidad y a que moneda desea cambiar
-                               2) Convertir Moneda
-                               3) Reiniciar datos""");
+                                   Menu 
+                                   1) Tipo de moneda origen(Dolar,Euro,Colon) cantidad y a que moneda desea cambiar
+                                   2) Convertir Moneda
+                                   3) Reiniciar datos""");
             int option = escaner.nextInt();
             switch (option) {
 
@@ -84,17 +84,6 @@ public class ConvertidorMonedas {
                         }
 
                     }
-
-                    /*
-                    if(nombre.equalsIgnoreCase("Euro") && nombre2.equalsIgnoreCase("Dolar")){
-                    Monedas monedaEuro = new Monedas("Euro", 1);
-                    Monedas monedaColon = new Monedas("Colon", 735.41f);
-                    Monedas monedaDolar = new Monedas("Dolar", 1.18f);
-                    
-                    Conversor j = new Conversor();
-                    resultado= j.convertir(monedaEuro,monedaDolar,cantmoneda);
-                    System.out.println("El resultado es:"+resultado);
-                    }*/
                 }
                 case 3: {
                     nombre = "";
