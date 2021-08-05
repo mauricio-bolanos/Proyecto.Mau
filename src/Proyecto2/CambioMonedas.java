@@ -5,6 +5,7 @@
  */
 package Proyecto2;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 /**
@@ -20,15 +21,15 @@ public class CambioMonedas {
         String monedaConvertir = "";
         float resultado = 0.0f;
         String nombre2 = "";
-        float equivalenteDel11 = 0.0f; //para asignar valor del equivalente de la moneda #1 en la moneda #2
-        float equivalenteDel12 = 0.0f; //para asignar valor del equivalente de la moneda #1 en colones
-        float equivalenteDel13 = 0.0f; //para asignar valor del equivalente en colones de la moneda #1 
-        float equivalenteDel21 = 0.0f; //para asignar valor del equivalente de la moneda #2 en la moneda #1
-        float equivalenteDel22 = 0.0f; //para asignar valor del equivalente de la moneda #2 en colones
-        float equivalenteDel23 = 0.0f; //para asignar valor del equivalente en colones de la moneda #2 
+        float equiMoneda1en2 = 0.0f; //para asignar valor del equivalente de la moneda #1 en la moneda #2
+        float equiMoneda1enC = 0.0f; //para asignar valor del equivalente de la moneda #1 en colones
+        float equiColonEnMoneda1 = 0.0f; //para asignar valor del equivalente en colones de la moneda #1 
+        float equiMoneda2en1 = 0.0f; //para asignar valor del equivalente de la moneda #2 en la moneda #1
+        float equiMoneda2enC = 0.0f; //para asignar valor del equivalente de la moneda #2 en colones
+        float equiColonEnMoneda2 = 0.0f; //para asignar valor del equivalente en colones de la moneda #2 
         
 
-        Scanner escaner = new Scanner(System.in);
+        Scanner escaner = new Scanner(System.in).useLocale(Locale.US);
 
         while (true) {
             System.out.println("""
@@ -43,19 +44,19 @@ public class CambioMonedas {
                     System.out.println("digite nombre de la moneda #1");
                     nombre1 = escaner.next();
                     System.out.println("Cuanto equivale en la moneda #2");
-                    equivalenteDel11 = escaner.nextFloat();
+                    equiMoneda1en2 = escaner.nextFloat();
                     System.out.println("Cuanto equivale en colones");
-                    equivalenteDel12 = escaner.nextFloat();
+                    equiMoneda1en2 = escaner.nextFloat();
                     System.out.println("Cuanto equivalen los colones en la moneda #1");
-                    equivalenteDel13 = escaner.nextFloat();
+                    equiColonEnMoneda1 = escaner.nextFloat();
                     System.out.println("digite nombre de la moneda #2");
                     nombre2 = escaner.next();
                     System.out.println("Cuanto equivale en la moneda #1");
-                    equivalenteDel21 = escaner.nextFloat();
+                    equiMoneda2en1 = escaner.nextFloat();
                     System.out.println("Cuanto equivale en colones");
-                    equivalenteDel22 = escaner.nextFloat();
+                    equiMoneda2enC = escaner.nextFloat();
                     System.out.println("Cuanto equivalen los colones en la moneda #2");
-                    equivalenteDel23 = escaner.nextFloat();
+                    equiColonEnMoneda2 = escaner.nextFloat();
                     System.out.println("digite nombre de la moneda que va a cambiar");
                     nombre = escaner.next();
                     System.out.println("Digite la cantidad de la moneda");
@@ -69,43 +70,43 @@ public class CambioMonedas {
 
                     ConversorMonedas j = new ConversorMonedas();
                     if (nombre1.equalsIgnoreCase(nombre1)) {
-                        MonedasValor moneda2 = new MonedasValor(nombre1, equivalenteDel11);
-                        MonedasValor monedaColon = new MonedasValor("Colon", equivalenteDel12);
+                        MonedasValor moneda2 = new MonedasValor(nombre1, equiMoneda1en2);
+                        MonedasValor monedaColon = new MonedasValor("Colon", equiMoneda1enC);
 
                         if (monedaConvertir.equalsIgnoreCase(nombre2)) {
                             resultado = j.convertir(moneda2, cantmoneda);
-                            System.out.println("El resultado es:" + resultado);
+                            System.out.println("El resultado en moneda #2 es:" + resultado);
                         }
                         if (monedaConvertir.equalsIgnoreCase("Colon")) {
                             resultado = j.convertir(monedaColon, cantmoneda);
-                            System.out.println("El resultado es:" + resultado);
+                            System.out.println("El resultado en colones es:" + resultado);
                         }
 
                     }
                     if (nombre2.equalsIgnoreCase(nombre2)) {
-                        MonedasValor monedaColon = new MonedasValor("Colon", equivalenteDel22);
-                        MonedasValor moneda1 = new MonedasValor(nombre1, equivalenteDel21);
+                        MonedasValor monedaColon = new MonedasValor("Colon", equiMoneda2enC);
+                        MonedasValor moneda1 = new MonedasValor(nombre1, equiMoneda2en1);
 
                         if (monedaConvertir.equalsIgnoreCase(nombre1)) {
                             resultado = j.convertir(moneda1, cantmoneda);
-                            System.out.println("El resultado es:" + resultado);
+                            System.out.println("El resultado en moneda #1 es:" + resultado);
                         }
                         if (monedaConvertir.equalsIgnoreCase("Colon")) {
                             resultado = j.convertir(monedaColon, cantmoneda);
-                            System.out.println("El resultado es:" + resultado);
+                            System.out.println("El resultado en colones es:" + resultado);
                         }
                     }
                     if (nombre.equalsIgnoreCase("Colon")) {
-                        MonedasValor moneda1 = new MonedasValor(nombre1, equivalenteDel13);
-                        MonedasValor moneda2 = new MonedasValor(nombre2, equivalenteDel23);
+                        MonedasValor moneda1 = new MonedasValor(nombre1, equiColonEnMoneda1);
+                        MonedasValor moneda2 = new MonedasValor(nombre2, equiColonEnMoneda2);
 
                         if (monedaConvertir.equalsIgnoreCase(nombre2)) {
                             resultado = j.convertir(moneda2, cantmoneda);
-                            System.out.println("El resultado es:" + resultado);
+                            System.out.println("El resultado en moneda #2 es:" + resultado);
                         }
                         if (monedaConvertir.equalsIgnoreCase(nombre1)) {
                             resultado = j.convertir(moneda1, cantmoneda);
-                            System.out.println("El resultado es:" + resultado);
+                            System.out.println("El resultado en moneda#1 es:" + resultado);
                         }
 
                     }
