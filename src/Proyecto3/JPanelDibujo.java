@@ -44,12 +44,12 @@ public class JPanelDibujo extends JPanel {
             g.setColor(Color.yellow);     
             g.fillOval(ov.getPosX(), ov.getPosY(),ov.getAncho(), ov.getAlto());  //dibuja un ovalo con fondo amarillo
 
-
+                Rectangulo re = new Rectangulo(posXRect,posYRect,anchoRect,altoRect);
             //RECTANGULOS
             g.setColor(Color.blue);
-            g.fillRect(posXRect,posYRect,anchoRect,altoRect);
+            g.fillRect(re.getPosX(),re.getPosY(),re.getAncho(),re.getAlto());
             g.setColor(Color.black);
-            g.drawRect(posXRect,posYRect,anchoRect,altoRect);
+            g.drawRect(re.getPosX(),re.getPosY(),re.getAncho(),re.getAlto());
             }
         
 
