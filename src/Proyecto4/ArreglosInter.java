@@ -40,17 +40,13 @@ public class ArreglosInter {
         int a = 0;
         int b = 0;
 
-        while (a < arregloInter.length) {
-            for ( int k = 0; k < arreglo1.length; k++) {
-                arregloInter[b] = arreglo1[a + k];
-                b++;
+        for(int k = 0;k<arregloInter.length; k++){
+            if(k<arreglo1.length){
+                arregloInter[a++] = arreglo1[k];
             }
-            
-            for (int k = 0; k < arreglo2.length; k++) {
-                arregloInter[b] = arreglo2[a + k];
-                b++;
+            if(k<arreglo2.length){
+                arregloInter[a++] = arreglo2[k];
             }
-            a+=10000;
         }
         System.out.println("Arreglo intercalado es:");
         for (b = 0; b < arregloInter.length; b++) {
