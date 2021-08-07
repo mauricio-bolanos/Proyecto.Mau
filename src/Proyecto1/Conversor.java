@@ -12,9 +12,9 @@ package Proyecto1;
  * @author maubo
  */
 public class Conversor {
-    public float convertir(Monedas origen, float montoOrigin){
+    public float convertir(Monedas entrada, float montoEntrada){
         float resultado = 0.0f;
-        resultado = montoOrigin*origen.getValor();
+        resultado = montoEntrada*entrada.getValor();
     
         return resultado;
     }
