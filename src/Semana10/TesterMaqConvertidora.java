@@ -17,10 +17,10 @@ public class TesterMaqConvertidora {
         
         
         MaqConvertidora m = new MaqConvertidora();
-        double montoDolares = m.convertir(modenaColon, modenaDolar, 1000);
+        double montoDolares = m.convertir(modenaColon,modenaDolar, 1000);
         System.out.println("Monto en Dólares: "+montoDolares);
         
-        double montoColones = m.convertir(modenaDolar, modenaColon, 2);
+        double montoColones = m.convertir(modenaDolar, modenaColon, 500);
         System.out.println("Monto en Colones: "+montoColones);
     }
 }

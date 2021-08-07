@@ -13,7 +13,7 @@ public class MaqConvertidora {
     String licencia;
     
     public double convertir(Moneda origen, Moneda salida, double montoOrigin){
-        double resultado = 0.0d;
+        double resultado = 0.0;
         resultado = montoOrigin/origen.getValor();
     
         return resultado;
