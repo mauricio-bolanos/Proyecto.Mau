@@ -11,7 +11,7 @@ package Proyecto3;
  */
 public class Tester {
      public static void main(String argv[]){
-      MiVentana miVentana = new MiVentana("VENTANA PARA GRAFICAR");
+      LaVentana Ventana = new LaVentana("VENTANA");
       
    }
 }

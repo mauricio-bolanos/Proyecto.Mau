@@ -13,21 +13,21 @@ import javax.swing.*;
  * nos apropiamos de todos los métodos y programación de la clase padre (en este caso
  * JFrame) y la "heredamos" a la clase hija (MiVentana)
  */
-public class MiVentana extends JFrame{
+public class LaVentana extends JFrame{
   
   private JFileChooser jFileChooser = new JFileChooser(System.getProperty("user.dir"));
   
  
   private JPanel panelIzquierda = new JPanel();
-  private JPanelDibujo panelCentral = new JPanelDibujo();
+  private Dibujo panelCentral = new Dibujo();
   
   private JButton abrirBoton = new JButton("Abrir");
   private JButton salirBoton = new JButton("Salir");
   
   
-  private MiVentana este = this;
+  private LaVentana este = this;
   
-  public MiVentana(String titulo){
+  public LaVentana(String titulo){
     super(titulo);
     
     this.setLayout(new BorderLayout());
