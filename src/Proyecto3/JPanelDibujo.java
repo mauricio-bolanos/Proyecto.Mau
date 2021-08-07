@@ -12,16 +12,12 @@ import java.awt.*;
  * @author maubo
  */
 public class JPanelDibujo extends JPanel {
-    /* 
-   * Constructor del panel para dibujar
-   */
   public JPanelDibujo(){
     this.setBackground(Color.RED);
   }
   
 
   
-  // Reimplementa paint
   @Override
   public void paint (Graphics g) { 
         super.paint(g);
