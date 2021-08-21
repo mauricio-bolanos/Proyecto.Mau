@@ -10,7 +10,8 @@ package Semana14;
  *
  * @author maubo
  */
-/*Respuesta:Es porque se están instanciando variables complejas o objetos en vez de variables primitivas de manera en que da un resultado aleatorio
+/*Respuesta:Es porque se están instanciando variables complejas o objetos en vez de variables primitivas de manera en que da un resultado aleatorio 
+por el comparador que es para variables primitivas
 */
 public class Test {
 public static void main(String[] args) {
