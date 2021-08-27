@@ -16,6 +16,7 @@ public class ExpedienteEstudiante {
     private double[] arregloNotas;
     private String[] arreglociclos;
     private int indice;
+    private String[] arregloNombres;
 
     public ExpedienteEstudiante(int cantidadDeNotas) {
         arregloNotas = new double[cantidadDeNotas];
@@ -23,12 +24,13 @@ public class ExpedienteEstudiante {
         indice = 0;
     }
 
-    public void agregarNota(double notaEstudiante, String ciclo) {
+    public void agregarNota(double notaEstudiante, String ciclo, String nombres) {
         try {
         
             try {
                 arregloNotas[indice] = notaEstudiante;
                 arreglociclos[indice] = ciclo;
+                arregloNombres[indice] = nombres;
                 indice++;
                 
                 
@@ -36,7 +38,7 @@ public class ExpedienteEstudiante {
                 //indice = indice + 1;
 
             } catch (ArrayIndexOutOfBoundsException ae) {
-                System.out.println("demasiados datos para el vector de quices");
+                System.out.println("demasiados datos para el vector de notas");
                 //indice--;
             } 
         }
@@ -55,6 +57,9 @@ public class ExpedienteEstudiante {
     public String getCiclo(int i) {
         return arreglociclos[i];
     }
+    public String getNombre(int i){
+        return arregloNombres[i];
+    }
 
     public double[] getArregloNotas() {
         return arregloNotas;
@@ -68,6 +73,14 @@ public class ExpedienteEstudiante {
     }
     public String[] getArreglociclos(){
         return arreglociclos;
+    }
+
+    public String[] getArregloNombres(){
+        return arregloNombres;
+    }
+
+    public void setArregloNombres(String[] arregloNombres) {
+        this.arregloNombres = arregloNombres;
     }
     
 }

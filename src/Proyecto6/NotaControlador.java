@@ -13,11 +13,11 @@ import Semana13.*;
  */
 public class NotaControlador {
     private ExpedienteEstudiante nota;
-    private NotaVista nv;
+    private SistemaNotasInterfaz nv;
     
     public NotaControlador(){
         nota = new ExpedienteEstudiante(0);
-        nv = new NotaVista(nota);
+        nv = new SistemaNotasInterfaz(nota);
     }
     
     /**
@@ -36,6 +36,9 @@ public class NotaControlador {
                         
                         String[] elNuevoArregloCiclos = new String[cant];
                         nota.setArreglociclos(elNuevoArregloCiclos);
+                        
+                        String[] elNuevoArregloNombres = new String[cant];
+                        nota.setArregloNombres(elNuevoArregloNombres);
                     }
                     
                     nv.leaNota();

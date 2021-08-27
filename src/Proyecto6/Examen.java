@@ -11,10 +11,10 @@ package Proyecto6;
  */
 public class Examen {
     Alumno alumno;
-    private int  nota;
-    private int puntosTotales;
-    private int puntosObtenidos;
-    private String materia;
+    private static int  nota;
+    private static int puntosTotales;
+    private static int puntosObtenidos;
+    private static String materia;
 
     public Examen(Alumno alumno, int nota, int puntosTotales, int puntosObtenidos, String materia) {
         this.alumno = alumno;
@@ -32,7 +32,7 @@ public class Examen {
         this.alumno = alumno;
     }
 
-    public int getNota() {
+    public static int getNota() {
         return nota;
     }
 

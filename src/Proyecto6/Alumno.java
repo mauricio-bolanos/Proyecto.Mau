@@ -12,12 +12,12 @@ import java.util.Objects;
  * @author maubo
  */
 public class Alumno {
-    private String nombre;
-    private String apellido;
-    private String segundoapellido;
-    private String grado;
-    private int edad;
-    private int carnet;
+    static String nombre;
+    static String apellido;
+    static String segundoapellido;
+    static String grado;
+    static int edad;
+    static int carnet;
 
     public Alumno(String nombre, String apellido, String segundoapellido, String grado, int edad, int carnet) {
         this.nombre = nombre;
@@ -28,7 +28,7 @@ public class Alumno {
         this.carnet = carnet;
     }
 
-    public String getNombre() {
+    public static String getNombre() {
         return nombre;
     }
 

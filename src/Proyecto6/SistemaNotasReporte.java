@@ -14,7 +14,20 @@ public class SistemaNotasReporte {
     public SistemaNotasReporte(Examen[] examenes){
         this.baseDatos = examenes;
     }
-    public String generarReporteTodosExamenes(){
-        return baseDatos;
+    public void generarReporteTodosExamenes(String Examen){
+        Examen=Examen;
+    }
+    public void generarReporteTodosAlumnos(String Alumno){
+        Alumno = Alumno;
+        
+    }
+    public void generarReporteAlumnosConNotaInferior(int nota){
+        
+        nota=Examen.getNota();
+        
+    }
+    public void generarReporteTodosExamenesOrdenadosPor(String nombre){
+        nombre = Alumno.getNombre();
+        
     }
 }
