@@ -52,8 +52,20 @@ public class SistemaNotasInterfaz {
     public int getOpcion() {
         int r = 0;
         try {
-            r = Integer.parseInt(JOptionPane.showInputDialog("1. Agregar nota\n2. Mostrar Notas\n3.Salir"));
-            if ((r < 1) || (r > 3)) {
+            r = Integer.parseInt(JOptionPane.showInputDialog("1. Agregar nota\n2. Mostrar Notas\n3.Hacer un reporte \n4.Salir"));
+            if ((r < 1) || (r > 4)) {
+                throw new Exception("# de opcion  es inválido");
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
+        return r;
+    }
+    public int getOpcion2() {
+        int r = 0;
+        try {
+            r = Integer.parseInt(JOptionPane.showInputDialog("1. Agregar reporte de todos los examenes\n2. Agregar reporte de todos los alumnos\n3.Agregar reporte con todos Alumnos con notas menores a 70 \n4.Agregar reporte con todos los examenes ordenados por nombre"));
+            if ((r < 1) || (r > 5)) {
                 throw new Exception("# de opcion  es inválido");
             }
         } catch (Exception e) {

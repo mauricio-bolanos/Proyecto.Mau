@@ -5,7 +5,7 @@
  */
 package Proyecto6;
 
-import Semana13.*;
+
 
 /**
  *
@@ -14,10 +14,15 @@ import Semana13.*;
 public class NotaControlador {
     private ExpedienteEstudiante nota;
     private SistemaNotasInterfaz nv;
+    private Alumno alumno;
+    private Examen examen;
+    private SistemaNotasReporte snr;
     
     public NotaControlador(){
         nota = new ExpedienteEstudiante(0);
         nv = new SistemaNotasInterfaz(nota);
+        alumno = new Alumno(null, null, null, null,0,0);
+        examen = new Examen(alumno,0,0,0,null);
     }
     
     /**
@@ -25,6 +30,7 @@ public class NotaControlador {
      */
     public void iniciar() {
         int op;
+        int op2;
         do {
             op = nv.getOpcion();
             switch (op) {
@@ -47,7 +53,14 @@ public class NotaControlador {
                     nv.muestreNotas();
                     break;
                 default:
+                case 3:
+                    do{
+                    op2 = nv.getOpcion2();
+                    switch(op2){
+                        case 1:
+                    }
+                    }while(op2 != 5);
             }
-        } while (op != 3);
+        } while (op != 4);
     }
 }
