@@ -5,6 +5,8 @@
  */
 package Examen2;
 
+
+
 /**
  *
  * @author maubo
@@ -31,6 +33,9 @@ public class SistemaArreglo {
         } catch(Exception e){
                 System.out.println("error");
         }   
+    }
+    public Vehiculo getMotor(int i) {
+        return arregloVehiculo[i];
     }
 
     public Vehiculo[] getArregloVehiculo() {

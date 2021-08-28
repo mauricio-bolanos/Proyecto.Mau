@@ -57,15 +57,31 @@ public class VehiculosVista {
         cantVehiculos.agregarVehiculo(v);
     }
 
+    //private void establecerComoVendido(int estado=1,Vehiculo.setEstado(3)){
+    //    estado = 3;
+    //}
+    //private void establecerComoVendido(int estado=1,Vehiculo.setEstado(3)){
+    //    estado = 3;
+    //}
+    
     public void muestreVehiculosBodega() {
         JTextArea ha = new JTextArea();
         for (int i = 0; i < cantVehiculos.getIndice(); i++) {
-            ha.append(cantVehiculos.getArregloVehiculo(i).get
-                +" "+cantVehiculos.get
-                +" "+cantVehiculos.get
-                +" "+cantVehiculos.get
-                +" "+ cantVehiculos.get
-                    +"\n");
+            ha.append(cantVehiculos.getMotor(i)+"\n");
+        }
+        JOptionPane.showMessageDialog(null, ha);
+    }
+    public void muestreVehiculosVendidos() {
+        JTextArea ha = new JTextArea();
+        for (int i = 0; i < cantVehiculos.getIndice(); i++) {
+            ha.append(cantVehiculos.getMotor(i)+"\n");
+        }
+        JOptionPane.showMessageDialog(null, ha);
+    }
+    public void muestreVehiculosDevueltos() {
+        JTextArea ha = new JTextArea();
+        for (int i = 0; i < cantVehiculos.getIndice(); i++) {
+            ha.append(cantVehiculos.getMotor(i)+"\n");
         }
         JOptionPane.showMessageDialog(null, ha);
     }

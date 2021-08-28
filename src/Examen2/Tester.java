@@ -10,5 +10,11 @@ package Examen2;
  * @author maubo
  */
 public class Tester {
-    
+
+    public static void main(String args[]) {
+
+        VehiculosControlador controlador = new VehiculosControlador();
+        controlador.iniciar();
+    }
+
 }
