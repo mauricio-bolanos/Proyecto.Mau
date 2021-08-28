@@ -17,4 +17,36 @@ public class SistemaArreglo {
         arregloVehiculo = new Vehiculo[cantVehiculos];
         indice = 0;
     }
+    
+    public void agregarVehiculo(Vehiculo registro){
+        try {
+        
+            try {
+                arregloVehiculo[indice++] = registro;
+
+            }catch (ArrayIndexOutOfBoundsException ae) {
+                System.out.println("demasiados datos");
+                indice--;
+            }
+        } catch(Exception e){
+                System.out.println("error");
+        }   
+    }
+
+    public Vehiculo[] getArregloVehiculo() {
+        return arregloVehiculo;
+    }
+
+    public void setArregloVehiculo(Vehiculo[] arregloVehiculo) {
+        this.arregloVehiculo = arregloVehiculo;
+    }
+
+    public int getIndice() {
+        return indice;
+    }
+
+    public void setIndice(int indice) {
+        this.indice = indice;
+    }
+    
 }
