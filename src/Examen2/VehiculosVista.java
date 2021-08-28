@@ -15,7 +15,7 @@ import javax.swing.JTextArea;
 public class VehiculosVista {
     private SistemaArreglo cantVehiculos;
 
-    public void VehiculoVista(SistemaArreglo vehiculo) {
+    public void VehiculosVista(SistemaArreglo vehiculo) {
         this.cantVehiculos = vehiculo;
     }
     

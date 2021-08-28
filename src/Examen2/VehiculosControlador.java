@@ -15,7 +15,7 @@ public class VehiculosControlador {
     private VehiculosVista vv;
     
     public VehiculosControlador(){
-        sa = new SistemaArreglo(0);
+        sa = new SistemaArreglo(1);
         vv = new VehiculosVista();
     }
 
@@ -30,7 +30,7 @@ public class VehiculosControlador {
                         Vehiculo[] elNuevoArreglo = new Vehiculo[cant];
                         sa.setArregloVehiculo(elNuevoArreglo);
                     }
-                    
+                default:
                     vv.leaRegistro();
                     break;
                 case 2:
@@ -43,8 +43,7 @@ public class VehiculosControlador {
 
                 case 4:
                     vv.muestreVehiculosVendidos();
-                    break;
-                default:    
+                    break;    
             }
         } while (op != 5);
     }
