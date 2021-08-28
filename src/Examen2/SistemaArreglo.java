@@ -38,6 +38,10 @@ public class SistemaArreglo {
         return arregloVehiculo[i];
     }
 
+    /**
+     *
+     * @return
+     */
     public Vehiculo[] getArregloVehiculo() {
         return arregloVehiculo;
     }
