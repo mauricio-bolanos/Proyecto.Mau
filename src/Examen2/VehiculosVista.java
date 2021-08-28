@@ -36,36 +36,50 @@ public class VehiculosVista {
         String anho;
         anho = JOptionPane.showInputDialog("Año del vehiculo?");
         
+        int estado;
+        estado = Integer.parseInt(JOptionPane.showInputDialog("Digite 1 si el vehiculo está en bodega, 2 si está vendido o 3 si es devuelto"));
+        
         int numPuertas;
         numPuertas = Integer.parseInt(JOptionPane.showInputDialog("Numero de puertas?"));
         
+        int peso;
+        peso = Integer.parseInt(JOptionPane.showInputDialog("Peso del motor?"));
         
-        cantVehiculos.agregarVehiculo();
+        String modeloMotor;
+        modeloMotor = JOptionPane.showInputDialog("Modelo del motor?");
+        
+        String serieMotor;
+        serieMotor = JOptionPane.showInputDialog("Serie del motor?");
+        
+        Motor m = new Motor(peso,modeloMotor, serieMotor);
+        Vehiculo v = new Vehiculo(modelo, estilo, color,numPuertas, anho, m,estado);
+        
+        cantVehiculos.agregarVehiculo(v);
     }
 
-    public void muestreVehiculos() {
-        JTextArea jt = new JTextArea();
+    public void muestreVehiculosBodega() {
+        JTextArea ha = new JTextArea();
         for (int i = 0; i < cantVehiculos.getIndice(); i++) {
-            jt.append(cantVehiculos.get
+            ha.append(cantVehiculos.getArregloVehiculo(i).get
                 +" "+cantVehiculos.get
                 +" "+cantVehiculos.get
                 +" "+cantVehiculos.get
                 +" "+ cantVehiculos.get
                     +"\n");
         }
-        JOptionPane.showMessageDialog(null, jt);
+        JOptionPane.showMessageDialog(null, ha);
     }
 
     public int getOpcion() {
-        int r = 0;
+        int j = 0;
         try {
-            r = Integer.parseInt(JOptionPane.showInputDialog("1. Agregar registro\n2. Mostrar registros\n3.Salir"));
-            if ((r < 1) || (r > 3)) {
-                throw new Exception("# de opcion  es inválido");
+            j = Integer.parseInt(JOptionPane.showInputDialog("1. Agregar registro\n2. Mostrar vehiculos en bodega\n3.Mostrar vehiculos vendidos\n4. Mostrar vehiculos devueltos\n5.Salir"));
+            if ((j < 1) || (j > 5)) {
+                throw new Exception("pruebe un número valido");
             }
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
-        return r;
+        return j;
     }
 }
